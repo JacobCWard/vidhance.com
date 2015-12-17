@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technologies on Vidhance</title>
+    <link>http://vidhance.com/technology/</link>
+    <description>Recent content in Technologies on Vidhance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://vidhance.com/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Six Degrees of Freedom</title>
+      <link>http://vidhance.com/technology/six-degrees/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/six-degrees/</guid>
+      <description>&lt;p&gt;Our world consists of three dimensions - breadth, width, and height - and the word &lt;strong&gt;freedom&lt;/strong&gt; refers to free movement in these three dimensions. In mathematics and engineering, we usually denote these three dimensions by &lt;em&gt;x&lt;/em&gt;, &lt;em&gt;y&lt;/em&gt;, and &lt;em&gt;z&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;By the word &lt;strong&gt;move&lt;/strong&gt;, we mean both changing location by moving along an axis through space - known as translation, but also rotating about an axis while still remaining at the same coordinates. Consider how you would say you are &lt;em&gt;moving&lt;/em&gt; when you are turning around, even though you&amp;rsquo;re standing on the same spot.&lt;/p&gt;
+
+&lt;p&gt;A smartphone and its camera has six degrees of freedom. Moving forward/backward, up/down, or left/right is called translation. Rotation around an axis is often termed pitch, yaw, or roll, depending on the axis of rotation. Since both intended and unintended movement in all six degrees of freedom can affect the recorded video, Vidhance has to understand, process, and cancel all six types of movement.&lt;/p&gt;
+
+&lt;p&gt;Accurate measurements of these movements are accomplished today through both AC and DC magnetic or electromagnetic fields in sensors that transmit positional and angular data to a processing unit and processed by Vidhance in real time.&lt;/p&gt;
+
+&lt;p&gt;Translation and rotation information can thus be provided by the smartphone&amp;rsquo;s sensors, or be inferred by Vidhance by tracking changes in the current scene, or both. Vidhance calculates the total movement and by changing the frame appropriately turns each frame in to the scene you intended. This is accomplished by separating the intended motion from the unintended motion, keeping only the former and cancelling the latter. For this to work, these movements must be expressed and analyzed mathematically.&lt;/p&gt;
+
+&lt;p&gt;Just as the complex numbers are a two-dimensional extension to the real numbers, quaternions are four-dimensional numbers. They can be added, subtracted, multiplied and divided according to their own special rules, which are compliant with the arithmetic rules of complex and real numbers. A rotation in 3D space can be represented numerically in several ways, for example with matrices or with unit quaternions.&lt;/p&gt;
+
+&lt;p&gt;Unit quaternions provide a more convenient mathematical notation for representing orientations and rotations of objects in three dimensions. They also have the advantage of being easier to compose, and compared to rotation matrices they are more numerically stable and may be more efficient.&lt;/p&gt;
+
+&lt;p&gt;Unit quaternions also avoid the problem of gimbal lock, where on degree of rotational freedom is lost when composing others. More precisely, gimbal lock is the loss of one degree of freedom in a three-dimensional, three-gimbal mechanism that occurs when the axes of two of the three gimbals are driven into a parallel configuration, &amp;ldquo;locking&amp;rdquo; the system into rotation in a degenerate two-dimensional space.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transferring data between CPU and GPU</title>
+      <link>http://vidhance.com/technology/cpu-gpu/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/cpu-gpu/</guid>
+      <description>&lt;p&gt;In all real-time video analysis, especially in Vidhance, all operations are time critical. Video frames arrive at a steady rate and need to be processed in real time before the next frame arrives. Every millisecond counts.&lt;/p&gt;
+
+&lt;p&gt;Complex real-time video enhancement algorithms require work to be done on both the CPU (Central Processing Unit) and the GPU (Graphics Processing Unit) to achieve the highest performance. This is due to the fact that these algorithms depend on both sequential and parallel operations. A CPU handles the former better than a GPU, and vice versa. As these have separate memory, data must be transferred back and forth between them.&lt;/p&gt;
+
+&lt;p&gt;Transfer time involves two concepts: latency and throughput. The throughput is the the rate at which the data is transferred during the actual data transfer. Latency is the time it takes for the whole transfer to occur, including time for initialization and waiting. Low latency is important when working with real-time analysis: Although the data throughput may be high, there can be a high latency which increases the overall transfer time.&lt;/p&gt;
+
+&lt;p&gt;Vidhance often has to run on resource constrained devices such as smartphones or rugged computers. Therefore it has to be optimized for minimum resource consumption. Most of the computing time is preferrably spent analyzing and enhancing the video rather than shuffling memory between different processing units. If one is not cautious, a large portion of the time will be spent preparing the video stream and transferring it between CPU memory and GPU memory, instead of doing any actual work. A shorter transfer time means there is more time available to process the image and provide good results.&lt;/p&gt;
+
+&lt;p&gt;When image data arrives into the system it has to be decoded into a useful pixel format. Afterwards, it is handled by the CPU, which analyzes the data and applies the first part of the image processing. When the CPU analysis is complete the image is sent to the GPU for further processing. The GPU applies various video enhancing techniques and then outputs the enhanced image to the screen. In some use cases the enhanced video stream needs to be streamed to other systems or saved to disk. In those cases data needs to be transferred back to the CPU, resulting in another resource-expensive transfer between CPU and GPU.&lt;/p&gt;
+
+&lt;p&gt;The time required to transfer image data is not completely linear to the data size, but heavily depends on both data size and platform, so extra care must be taken in order to find a global optimum. Many different options for data transfer exist, some generic and some platform-specific. OpenGL API functions, the use of a &lt;em&gt;pixel buffer object&lt;/em&gt; (PBO), and OpenCL all fall in the first category. Intel, AMD, and NVIDIA all have platform-specific alternatives, such as the &lt;em&gt;INTEL_map_texture&lt;/em&gt; OpenGL extension, the &lt;em&gt;AMD_pinned_memory&lt;/em&gt; OpenGL extension, or NVIDIA&amp;rsquo;s &lt;em&gt;GPU Direct&lt;/em&gt; and &lt;em&gt;Unified Virtual Addressing&lt;/em&gt;. Naturally, Vidhance must make the most of what&amp;rsquo;s available on each device.&lt;/p&gt;
+
+&lt;p&gt;By implementing, calibrating, and using a decision tree, only a subset of the above methods needs to be tested. This reduces the time it takes for the data transfer controller to determine the fastest method. The controller could actually do this on the fly by transferring each frame with a new method and comparing the result against the best method so far. After a few frames the best method for that device will have been found. When using the decision algorithms to determine the fastest method, the transfer times can be drastically reduced. Most importantly, this enables work to be performed on the GPU without spending Vidhance&amp;rsquo;s entire time budget.&lt;/p&gt;
+
+&lt;p&gt;Most of the information here comes from the Master&amp;rsquo;s thesis &amp;ldquo;Transfer Time Reduction of Data Transfers between CPU and GPU&amp;rdquo; performed for us in collaboration with Uppsala university. Read it in full &lt;a href=&#34;http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-205272&#34;&gt;here&lt;/a&gt;. The problem of data transfer time is one we continually confront as we strive to improve Vidhance even more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Video Compression</title>
+      <link>http://vidhance.com/technology/compression/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/compression/</guid>
+      <description>&lt;p&gt;We generally say that a video is a series of images, around 30 or so for each second of video. Each image is called a &lt;strong&gt;frame&lt;/strong&gt;. This means that storing or transmitting a video file really involves storing or transmitting a potentially very large set of images. Naturally, we want to minimize the time and cost of this action, which is why we &lt;em&gt;compress&lt;/em&gt; videos.&lt;/p&gt;
+
+&lt;p&gt;Images can themselves be compressed, for example by storing them in like JPEG and PNG. However, video compression usually works by computing and compressing &lt;strong&gt;deltas&lt;/strong&gt; between frames, the difference between one frame and the next, rather than storing each individual frame as a compressed image. If a frame is more similar to the previous one, less data is required in order to describe the delta. As a digital image consists of pixels, the delta is an accumulation of differences in corresponding pixels.&lt;/p&gt;
+
+&lt;p&gt;The difference, or &lt;strong&gt;diff&lt;/strong&gt; for short, between two pixels can be computed by taking the absolute value of the difference between the colors of those pixels. An image diff can be created by computing the pixel diff for every pixel in two different images. If a pixel has the exact same color in both images, that pixel will be black in the diff, since the color black is (0,0,0) in the RGB color space. The larger the difference between corresponding pixels in two frames, the brighter the pixel will be in the diff. Thus the diff between two frames can itself be viewed as an image, as seen below. The more similar the images are, the darker the total diff will be.&lt;/p&gt;
+
+&lt;p&gt;The above image shows one frame of the video in the center. The diff on the left corresponds to the unstabilized version, whereas the diff on the right corresponds to the stabilized video. Because the two frames are mostly very similar images, the diff is mostly black. The outlines of the girl&amp;rsquo;s hair can be seen as purple lines where pixels have gone from green to white: adding purple (255,0,255) to green (0,255,0) results in white (255,255,255).&lt;/p&gt;
+
+&lt;p&gt;Stabilization works by compensating for unwanted camera movements, effectively making each frame in the video more similar to the one before it. Most modern video encoders (such as H.264) have some form of motion compensation built-in. This compensation can often reduce the delta between two frames to a few vectors describing how elements in the frame have moved in the next. The encoders do not, however, compensate for unwanted movement in the video.&lt;/p&gt;
+
+&lt;p&gt;Although professional video is often very stable to begin with, the same cannot be said for amateur video captured using a camcorder or a smartphone. Vidhance stabilization keeps the image stable by compensating for unwanted movement, keeping the object being viewed in place. This makes for a more comfortable viewer experience and takes some of the workload off the video encoder.&lt;/p&gt;
+
+&lt;p&gt;Stabilizing video before compressing it can dramatically reduce file size for medium and low quality video. This translates into less bandwidth usage, ultimately increasing network performance. Imint&amp;rsquo;s initial study showed file size reduction typically in the range of 5% to 20% in the range of standard encoding qualities.&lt;/p&gt;
+
+&lt;p&gt;Video can be encoded at either &lt;strong&gt;constant&lt;/strong&gt; or &lt;strong&gt;variable&lt;/strong&gt; bitrate. When encoding video at a constant bitrate, the quality of the video is limited by the amount of data allowed for each frame, so the delta must be reduced to that amount of data, even if this means losing a lot of information. When encoding video at a variable bitrate, the bitrate of the video is governed by the quality setting, so in order to maintain a given quality score, the delta may become very complex. Storing a complex delta without losing information requires more data.&lt;/p&gt;
+
+&lt;p&gt;By stabilizing the video before compressing it, the delta will be smaller in size because the stabilized frame is more similar to the preceding one. This translates into higher possible video quality with stabilization than without. In all of our experiments, the stabilized video resulted in smaller files for the lower quality settings, especially for very low quality settings.&lt;/p&gt;
+
+&lt;p&gt;As a rule, the lower the quality setting, the greater the benefit of stabilization. The net result is a higher-quality video at no effort for the user - Vidhance handles everything in the background.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

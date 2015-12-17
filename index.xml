@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vidhance</title>
+    <link>http://vidhance.com/</link>
+    <description>Recent content on Vidhance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jun 2015 16:02:02 +0200</lastBuildDate>
+    <atom:link href="http://vidhance.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>&#34;Vidhance Could Soon Replace Live Video Producers&#34; - TechCrunch Covers New Roadmap</title>
+      <link>http://vidhance.com/newspost/20150625-vidhance-could-soon-replace-live-video-producers/</link>
+      <pubDate>Thu, 25 Jun 2015 16:02:02 +0200</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150625-vidhance-could-soon-replace-live-video-producers/</guid>
+      <description>&lt;p&gt;In an article published on June 22nd, 2015, &lt;a href=&#34;http://techcrunch.com&#34;&gt;TechCrunch&lt;/a&gt; editor &lt;a href=&#34;http://techcrunch.com/author/frederic-lardinois/&#34;&gt;Frederic Lardinois&lt;/a&gt; digs into the new Vidhance® Mobile roadmap, and make insightful predictions on how this technology could change the media landscape.&lt;/p&gt;
+
+&lt;p&gt;Read the full article &lt;a href=&#34;http://techcrunch.com/2015/06/22/imints-Vidhance-algorithms-could-soon-replace-live-video-producers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The coming functionality of Vidhance Mobile was also covered on &lt;a href=&#34;http://swedishstartupspace.com/2015/07/09/imint-uppsala-auto-zoom/&#34;&gt;Swedish Startup Space&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imint Showcase New Vidhance Mobile Capability - Live Autozoom Enables Consumers to Capture Powerful Videos</title>
+      <link>http://vidhance.com/newspost/20150623-imint-showcase-new-vidhance-mobile-capability/</link>
+      <pubDate>Tue, 23 Jun 2015 12:37:25 +0200</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150623-imint-showcase-new-vidhance-mobile-capability/</guid>
+      <description>&lt;p&gt;The video software company Imint has revealed new disruptive functionality in its Vidhance® Mobile software platform. The real-time software, running on a portable camera device such as a smartphone, enables user to automatically capture smooth and stable cut-outs, following objects of interest with cinematic pans and zooms. The Autozoom capability is a result of earlier works by Imint within the defense segment, and the company has fused robust algorithms for object detection, tracking and sizing, and added videographic rules for zoom and composition, to give consumers instant and effortless videos that are far more interesting and engaging from more traditional “shaky surveillance camera”-clips. Regardless of the filming situation – your friend’s adventurous cliff dive, your daughter’s soccer game, or your grandfather driving away on his new HD motorbike – Autozoom solves a problem recognized by most. Either the filmmaker keeps a wide angle throughout the clip, resulting in a boring, disconnected viewing experience, or tries to fiddle with manual zoom, with terrible result with magnified shakes and the object more often out of the frame then in.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class=&#34;boxed-img &#34;&gt;
+	&lt;img src=&#34;ropeway_snapshot.png&#34;/&gt;
+	
+		&lt;figcaption&gt;Original video to the left, and with Vidhance Mobile Live Autozoom to the right. The functionality change the whole video experience, and creates dynamic clips that engage the viewer.&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Imint is a software company based in Uppsala, Sweden, with its background in academic research in image analysis and video optimizations. Imint&amp;rsquo;s efficient real-time Vidhance algorithms has been field deployed for several years in demanding defense- and industrial applications. In October 2014, Imint publically launched its first prototype of Vidhance Mobile, with its software re-targeted for smartphones. Vidhance Mobile is an intelligent software platform that can added to the phone&amp;rsquo;s operating system or directly into apps, giving the smartphone or app respectively, a clear edge in camera capabilities and giving all users a smooth video experience. The first feature introduced in Vidhance Mobile was true cinematic video stabilization. Following this launch, Imint has been relentless in its R&amp;amp;D efforts, pushing the envelope further, to bring consumers new disruptive ways to capture breathtaking videos, for sharing or live streaming.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class=&#34;boxed-img &#34;&gt;
+	&lt;img src=&#34;uxstart.png&#34;/&gt;
+	
+		&lt;figcaption&gt;Example of Ux; using also the motion-in-motion detector in Vidhance, the user can automatically be presented with suggestions on interesting objects, end quickly enable Live Autozoom.&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The revealed Autzoom feature addition to Vidhance Mobile, works by combining several layers of real-time video analysis and optimizations. Imint’s technology for object tracking and sizing has been deployed in demanding applications such as military drone surveillance and air traffic management, and is very robust in terms of object size, shape, color, orientation and illumination. When enabled, the software automatically moves closer to the object of interest, and compose a more engaging close-up experience. Several ways for user interaction is available, from simpler user guidance by tapping on the preview screen where the object of interest is, to use the automatic moving object detection also a part of legacy Vidhance applications within defense applications, such as airborne maritime surveillance. When enabled, the user can be presented with simple overlays to the preview, with object recommendations, and while autozoom is running, an icon for disengaging and searching for new objects.&lt;/p&gt;
+
+&lt;p&gt;Simon Mika, CTO of Imint, gave further description of the new functionality, and next steps:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We are very happy with the first results – we had a hunch this would be extremely helpful for effortless creation of stunning video clips, but when the first results were out of the labs we all knew this was a killer feature. As a positive side note, it also offers realistic alternatives to how to utilize high resolution sensors. Not all situations calls for recording in 4K, as video files get huge, and it might not be convenient for quick sharing of clips on social media. With Vidhance Mobile Autozoom, the user automatically get scaled down version – but covering the interesting parts in a way that looks more professional.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;figure class=&#34;boxed-img &#34;&gt;
+	&lt;img src=&#34;composing.png&#34;/&gt;
+	
+		&lt;figcaption&gt;Vidhance Mobile Live Autozoom is being further improved, to increase automatic optimal frame composition, using motion patterns (such as direction) and object recognition.&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We&amp;rsquo;re now extending this functionality with additional intelligence, such as using motion patterns and object recognition for optimal frame composition. We believe that for consumer video to become ubiquitous, on-the-go recording should just work, and users should be surprised on how good videographers they have become.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Andreas Lifvendahl, Imint’s CEO, added to Mika’s comments:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I am truly impressed by the team’s ability to spin out innovations in a short time – we’re revealing Autozoom only nine months after the first Android-based version of Vidhance Mobile was first showcased. The timing is also excellent, as we see a second wave of interest around mobile video, driven by live social media applications like Meerkat and Periscope. After an initial hype, we believe user expectations on higher quality streams will need to be addressed to keep engagement to this medium. With Vidhance Mobile, we have followed a gap analysis approach; what are consumers with smartphones main shortcomings compared to a professional film crew? Our video stabilization and adaptive regional contrast optimization solved the basic problems on video quality. Autozoom enables users to emulate professional gear on tripods, doing stable close-ups.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Asked about next steps in this gap-closing approach, Lifvendahl concluded:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Obviously the main remaining tasks is to use several cameras, and do a professional production mix of different angles, positions and distances, as broadcast companies has taught us it should look. Well, there are no shortage of smartphones around, so the interesting problems is how to connect these, how an automatic “cloud producer” would do the mixing, and what kind of metadata that needs to flow between ad-hoc contributors and such cloud producer. We will reveal more on our roadmap here at a later stage; we are currently filing a number of patents, as we believe we have solved some of the messier technology hurdles here.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Short examples of Live Autozoom can be seen on Youtube:&lt;br /&gt;
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;auto&#34; src=&#34;http://www.youtube.com/embed/qIletnpr8xk&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;auto&#34; src=&#34;http://www.youtube.com/embed/BA3UTWaXWds&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;auto&#34; src=&#34;http://www.youtube.com/embed/8WocPfvrp2I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imint&#39;s CEO Interviewed by Breakit (in Swedish)</title>
+      <link>http://vidhance.com/newspost/20150721-ceo-interviewed-by-breakit/</link>
+      <pubDate>Mon, 08 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150721-ceo-interviewed-by-breakit/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://breakit.se&#34;&gt;Breakit&lt;/a&gt; - the new Swedish news site on technology and startups - interviews Imint CEO Andreas Lifvendahl.See the &lt;a href=&#34;https://redeye.solidtango.com/widgets/embed/epsjxsbb?auto_play=false&#34;&gt;full video interview&lt;/a&gt; (in Swedish).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imint Keeps Growing - We Welcome Bettina, David and Ziquan</title>
+      <link>http://vidhance.com/newspost/20150326-we-welcome-bettina-david-and-ziquan/</link>
+      <pubDate>Thu, 26 Mar 2015 13:10:30 +0200</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150326-we-welcome-bettina-david-and-ziquan/</guid>
+      <description>&lt;p&gt;Imint has brought in more talents to its engineering team; and we welcome Bettina Selig, David Piuva Forsgren and Ziquan Yu, who all recently joined Imint. They all add valuable expertise and knowledge to the accelerating research, development and product building efforts. This is supportive of the goal of taking Imint to a leading position within mobile video and user experience.&lt;/p&gt;
+
+&lt;p&gt;Bettina Selig has PhD in Computerized Image Analysis from the Center for Image Analysis, Uppsala. As part of her PhD research, Bettina was also a visiting student at TU Delft and Rotterdam Ophthalmic Institute, the Netherlands. Bettina also holds a Master&amp;rsquo;s degree in Computer Science from Freie Universität Berlin. Bettina&amp;rsquo;s primary research expertise is within automatic image segmentation algorithms, but her experience within robotic vision will also give valuable contributions to Imint. In this field, during her master studies at Freie Universität, Bettina was strongly involved in building up the vision system for autonomous robots playing soccer. Her team FU-Fighters was the proud winner of the RoboCup World Championship in Osaka in 2005. During her time at Center for Image Analysis, she also taught and mentored bachelor and master students at Uppsala University in the field of image analysis, pattern recognition and robotics, including a full term project on rescue robots.&lt;/p&gt;
+
+&lt;p&gt;David Forsgren Piuva has a Master&amp;rsquo;s degree in Computer Science from Uppsala University. David has been devoted to computer games and graphics for almost two decades, and has developed both his own graphics&amp;rsquo;s engine and programming language. David received the best in class award from Lundellska skolan gymnasium, and was nominated to Swedish Game Awards for best execution in 2008. With this background, and his strong interest in both audio- and imaging algorithms, he has already contributed substantially to Imint&amp;rsquo;s development on contrast optimization technologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class=&#34;boxed-img &#34;&gt;
+	&lt;img src=&#34;bettina_dominic_david_final.jpg&#34;/&gt;
+	
+		&lt;figcaption&gt;Ziquan Yu, Bettina Selig and David Forsgren Piuva&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ziquan &amp;ldquo;Dominic&amp;rdquo; Yu holds a Bachelor&amp;rsquo;s degree in Electronic and Information Engineering from Northwestern Polytechnical University, Xi&amp;rsquo;an, China, a Master&amp;rsquo;s degree in Electrical Engineering from Dalarna University, Sweden, and a Master&amp;rsquo;s degree in Computational Science from Uppsala University. Ziquan&amp;rsquo;s experience in object identification and tracking methods and algorithms, honed in his as research assistant at the Center for Image Analysis, is adding to Imint&amp;rsquo;s further tuning of its core video motion algorithms. During his work as research assistant, Ziquan developed algorithms to identify and track individual bees in a beehive, in a project under the Swedish University of Agricultural Sciences. Outside his academic work, he has devoted his time to computer vision projects, including novel ways to use the Kinect technology.&lt;/p&gt;
+
+&lt;p&gt;Simon Mika, CTO at Imint, are proud of these additions to the team, and commented:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This &amp;lsquo;triplet&amp;rsquo; of very clever engineers makes a superb combination of solid analytical skills, experience in using a researcher&amp;rsquo;s toolbox, personal devotion to the subject matter, and a can-do pragmatic way of achieving results. This enables us to put in the turbo drive in rolling out tomorrow&amp;rsquo;s technology enablers for mobile video.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dominic Yu is happy to be on board with Imint, and said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Taking image analysis methods into practical use in products is the key drive for my motivation. I&amp;rsquo;m glad to have the opportunity to join the Imint team - it is a smart and supportive group of people, set to accomplish something of significance for mobile video, and I am pleased to be able to contribute with my unique skills.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In addition to these recent hires, Imint has also two bright master thesis students onboard, as part of the co-operation with the Center for Image Analysis. More information on these projects will be made official as the projects successfully wraps up. Part of the work is centered on novel algorithmic research in mapping mobile video to user experience, and core algorithm adaptation for this purpose.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imint Listed as &#34;Company to Watch&#34; by Leading Business Journal</title>
+      <link>http://vidhance.com/newspost/20150219-imint-a-company-to-watch/</link>
+      <pubDate>Thu, 19 Feb 2015 13:23:29 +0200</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150219-imint-a-company-to-watch/</guid>
+      <description>&lt;p&gt;Imint was listed as a &amp;ldquo;Must watch&amp;rdquo; company by the Swedish weekly business journal &lt;a href=&#34;http://va.se&#34;&gt;Veckans Affärer&lt;/a&gt;, in a theme article looking at drone-related companies. The article is a part of a start-up watch in co-operation with &lt;a href=&#34;http://almi.se/almi-invest/about-almi-invest&#34;&gt;Almi Invest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The article can be read &lt;a href=&#34;http://va.se/nyheter/2015/02/19/smarta-dronare&#34;&gt;here&lt;/a&gt; (in Swedish).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Imint is Expanding - New Job Openings</title>
+      <link>http://vidhance.com/newspost/20150202-imint-is-expanding/</link>
+      <pubDate>Mon, 02 Feb 2015 13:33:01 +0200</pubDate>
+      
+      <guid>http://vidhance.com/newspost/20150202-imint-is-expanding/</guid>
+      <description>&lt;p&gt;Imint is in rapid expansion, and has opened up a number of interesting position within the field of image research, product management, software development and technical marketing.&lt;/p&gt;
+
+&lt;p&gt;Imint encourage interested candidates to check out our &lt;a href=&#34;http://vidhance.com/career&#34;&gt;job postings&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Video Compression</title>
+      <link>http://vidhance.com/technology/compression/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/compression/</guid>
+      <description>&lt;p&gt;We generally say that a video is a series of images, around 30 or so for each second of video. Each image is called a &lt;strong&gt;frame&lt;/strong&gt;. This means that storing or transmitting a video file really involves storing or transmitting a potentially very large set of images. Naturally, we want to minimize the time and cost of this action, which is why we &lt;em&gt;compress&lt;/em&gt; videos.&lt;/p&gt;
+
+&lt;p&gt;Images can themselves be compressed, for example by storing them in like JPEG and PNG. However, video compression usually works by computing and compressing &lt;strong&gt;deltas&lt;/strong&gt; between frames, the difference between one frame and the next, rather than storing each individual frame as a compressed image. If a frame is more similar to the previous one, less data is required in order to describe the delta. As a digital image consists of pixels, the delta is an accumulation of differences in corresponding pixels.&lt;/p&gt;
+
+&lt;p&gt;The difference, or &lt;strong&gt;diff&lt;/strong&gt; for short, between two pixels can be computed by taking the absolute value of the difference between the colors of those pixels. An image diff can be created by computing the pixel diff for every pixel in two different images. If a pixel has the exact same color in both images, that pixel will be black in the diff, since the color black is (0,0,0) in the RGB color space. The larger the difference between corresponding pixels in two frames, the brighter the pixel will be in the diff. Thus the diff between two frames can itself be viewed as an image, as seen below. The more similar the images are, the darker the total diff will be.&lt;/p&gt;
+
+&lt;p&gt;The above image shows one frame of the video in the center. The diff on the left corresponds to the unstabilized version, whereas the diff on the right corresponds to the stabilized video. Because the two frames are mostly very similar images, the diff is mostly black. The outlines of the girl&amp;rsquo;s hair can be seen as purple lines where pixels have gone from green to white: adding purple (255,0,255) to green (0,255,0) results in white (255,255,255).&lt;/p&gt;
+
+&lt;p&gt;Stabilization works by compensating for unwanted camera movements, effectively making each frame in the video more similar to the one before it. Most modern video encoders (such as H.264) have some form of motion compensation built-in. This compensation can often reduce the delta between two frames to a few vectors describing how elements in the frame have moved in the next. The encoders do not, however, compensate for unwanted movement in the video.&lt;/p&gt;
+
+&lt;p&gt;Although professional video is often very stable to begin with, the same cannot be said for amateur video captured using a camcorder or a smartphone. Vidhance stabilization keeps the image stable by compensating for unwanted movement, keeping the object being viewed in place. This makes for a more comfortable viewer experience and takes some of the workload off the video encoder.&lt;/p&gt;
+
+&lt;p&gt;Stabilizing video before compressing it can dramatically reduce file size for medium and low quality video. This translates into less bandwidth usage, ultimately increasing network performance. Imint&amp;rsquo;s initial study showed file size reduction typically in the range of 5% to 20% in the range of standard encoding qualities.&lt;/p&gt;
+
+&lt;p&gt;Video can be encoded at either &lt;strong&gt;constant&lt;/strong&gt; or &lt;strong&gt;variable&lt;/strong&gt; bitrate. When encoding video at a constant bitrate, the quality of the video is limited by the amount of data allowed for each frame, so the delta must be reduced to that amount of data, even if this means losing a lot of information. When encoding video at a variable bitrate, the bitrate of the video is governed by the quality setting, so in order to maintain a given quality score, the delta may become very complex. Storing a complex delta without losing information requires more data.&lt;/p&gt;
+
+&lt;p&gt;By stabilizing the video before compressing it, the delta will be smaller in size because the stabilized frame is more similar to the preceding one. This translates into higher possible video quality with stabilization than without. In all of our experiments, the stabilized video resulted in smaller files for the lower quality settings, especially for very low quality settings.&lt;/p&gt;
+
+&lt;p&gt;As a rule, the lower the quality setting, the greater the benefit of stabilization. The net result is a higher-quality video at no effort for the user - Vidhance handles everything in the background.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transferring data between CPU and GPU</title>
+      <link>http://vidhance.com/technology/cpu-gpu/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/cpu-gpu/</guid>
+      <description>&lt;p&gt;In all real-time video analysis, especially in Vidhance, all operations are time critical. Video frames arrive at a steady rate and need to be processed in real time before the next frame arrives. Every millisecond counts.&lt;/p&gt;
+
+&lt;p&gt;Complex real-time video enhancement algorithms require work to be done on both the CPU (Central Processing Unit) and the GPU (Graphics Processing Unit) to achieve the highest performance. This is due to the fact that these algorithms depend on both sequential and parallel operations. A CPU handles the former better than a GPU, and vice versa. As these have separate memory, data must be transferred back and forth between them.&lt;/p&gt;
+
+&lt;p&gt;Transfer time involves two concepts: latency and throughput. The throughput is the the rate at which the data is transferred during the actual data transfer. Latency is the time it takes for the whole transfer to occur, including time for initialization and waiting. Low latency is important when working with real-time analysis: Although the data throughput may be high, there can be a high latency which increases the overall transfer time.&lt;/p&gt;
+
+&lt;p&gt;Vidhance often has to run on resource constrained devices such as smartphones or rugged computers. Therefore it has to be optimized for minimum resource consumption. Most of the computing time is preferrably spent analyzing and enhancing the video rather than shuffling memory between different processing units. If one is not cautious, a large portion of the time will be spent preparing the video stream and transferring it between CPU memory and GPU memory, instead of doing any actual work. A shorter transfer time means there is more time available to process the image and provide good results.&lt;/p&gt;
+
+&lt;p&gt;When image data arrives into the system it has to be decoded into a useful pixel format. Afterwards, it is handled by the CPU, which analyzes the data and applies the first part of the image processing. When the CPU analysis is complete the image is sent to the GPU for further processing. The GPU applies various video enhancing techniques and then outputs the enhanced image to the screen. In some use cases the enhanced video stream needs to be streamed to other systems or saved to disk. In those cases data needs to be transferred back to the CPU, resulting in another resource-expensive transfer between CPU and GPU.&lt;/p&gt;
+
+&lt;p&gt;The time required to transfer image data is not completely linear to the data size, but heavily depends on both data size and platform, so extra care must be taken in order to find a global optimum. Many different options for data transfer exist, some generic and some platform-specific. OpenGL API functions, the use of a &lt;em&gt;pixel buffer object&lt;/em&gt; (PBO), and OpenCL all fall in the first category. Intel, AMD, and NVIDIA all have platform-specific alternatives, such as the &lt;em&gt;INTEL_map_texture&lt;/em&gt; OpenGL extension, the &lt;em&gt;AMD_pinned_memory&lt;/em&gt; OpenGL extension, or NVIDIA&amp;rsquo;s &lt;em&gt;GPU Direct&lt;/em&gt; and &lt;em&gt;Unified Virtual Addressing&lt;/em&gt;. Naturally, Vidhance must make the most of what&amp;rsquo;s available on each device.&lt;/p&gt;
+
+&lt;p&gt;By implementing, calibrating, and using a decision tree, only a subset of the above methods needs to be tested. This reduces the time it takes for the data transfer controller to determine the fastest method. The controller could actually do this on the fly by transferring each frame with a new method and comparing the result against the best method so far. After a few frames the best method for that device will have been found. When using the decision algorithms to determine the fastest method, the transfer times can be drastically reduced. Most importantly, this enables work to be performed on the GPU without spending Vidhance&amp;rsquo;s entire time budget.&lt;/p&gt;
+
+&lt;p&gt;Most of the information here comes from the Master&amp;rsquo;s thesis &amp;ldquo;Transfer Time Reduction of Data Transfers between CPU and GPU&amp;rdquo; performed for us in collaboration with Uppsala university. Read it in full &lt;a href=&#34;http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-205272&#34;&gt;here&lt;/a&gt;. The problem of data transfer time is one we continually confront as we strive to improve Vidhance even more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Six Degrees of Freedom</title>
+      <link>http://vidhance.com/technology/six-degrees/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/technology/six-degrees/</guid>
+      <description>&lt;p&gt;Our world consists of three dimensions - breadth, width, and height - and the word &lt;strong&gt;freedom&lt;/strong&gt; refers to free movement in these three dimensions. In mathematics and engineering, we usually denote these three dimensions by &lt;em&gt;x&lt;/em&gt;, &lt;em&gt;y&lt;/em&gt;, and &lt;em&gt;z&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;By the word &lt;strong&gt;move&lt;/strong&gt;, we mean both changing location by moving along an axis through space - known as translation, but also rotating about an axis while still remaining at the same coordinates. Consider how you would say you are &lt;em&gt;moving&lt;/em&gt; when you are turning around, even though you&amp;rsquo;re standing on the same spot.&lt;/p&gt;
+
+&lt;p&gt;A smartphone and its camera has six degrees of freedom. Moving forward/backward, up/down, or left/right is called translation. Rotation around an axis is often termed pitch, yaw, or roll, depending on the axis of rotation. Since both intended and unintended movement in all six degrees of freedom can affect the recorded video, Vidhance has to understand, process, and cancel all six types of movement.&lt;/p&gt;
+
+&lt;p&gt;Accurate measurements of these movements are accomplished today through both AC and DC magnetic or electromagnetic fields in sensors that transmit positional and angular data to a processing unit and processed by Vidhance in real time.&lt;/p&gt;
+
+&lt;p&gt;Translation and rotation information can thus be provided by the smartphone&amp;rsquo;s sensors, or be inferred by Vidhance by tracking changes in the current scene, or both. Vidhance calculates the total movement and by changing the frame appropriately turns each frame in to the scene you intended. This is accomplished by separating the intended motion from the unintended motion, keeping only the former and cancelling the latter. For this to work, these movements must be expressed and analyzed mathematically.&lt;/p&gt;
+
+&lt;p&gt;Just as the complex numbers are a two-dimensional extension to the real numbers, quaternions are four-dimensional numbers. They can be added, subtracted, multiplied and divided according to their own special rules, which are compliant with the arithmetic rules of complex and real numbers. A rotation in 3D space can be represented numerically in several ways, for example with matrices or with unit quaternions.&lt;/p&gt;
+
+&lt;p&gt;Unit quaternions provide a more convenient mathematical notation for representing orientations and rotations of objects in three dimensions. They also have the advantage of being easier to compose, and compared to rotation matrices they are more numerically stable and may be more efficient.&lt;/p&gt;
+
+&lt;p&gt;Unit quaternions also avoid the problem of gimbal lock, where on degree of rotational freedom is lost when composing others. More precisely, gimbal lock is the loss of one degree of freedom in a three-dimensional, three-gimbal mechanism that occurs when the axes of two of the three gimbals are driven into a parallel configuration, &amp;ldquo;locking&amp;rdquo; the system into rotation in a degenerate two-dimensional space.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Portable Consumer Devices</title>
+      <link>http://vidhance.com/solutions/phone/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/solutions/phone/</guid>
+      <description>&lt;p&gt;During the past few years, the smartphone market has seen a technology race in terms of camera performance, and market leading devices are now capable of near-professional still photography. Unfortunately, video performance and quality were left behind in this race.&lt;/p&gt;
+
+&lt;p&gt;The Vidhance® software platform will enable video to make a leap in the same direction as still photography by removing unwanted movements and leaving a smooth, professional feeling in the final result.&lt;/p&gt;
+
+&lt;p&gt;The market for smartphones is the largest of all consumer electronics markets today, and its key role as individual expression is growing increasingly strong. Phone manufacturers, the telecom industry, and app developers all want to see progressing smartphones, where camera and video play a key role in making new models attractive to users.&lt;/p&gt;
+
+&lt;p&gt;Read even more about Vidhance Mobile at &lt;a href=&#34;http://vidhancemobile.com&#34;&gt;vidhancemobile.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Apps and Social Media</title>
+      <link>http://vidhance.com/solutions/apps/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/solutions/apps/</guid>
+      <description>&lt;p&gt;Today a huge number of apps and social media allow the user to save, process and share photos and video, but only a few can provide the user with automated suggestions on how to improve that content.&lt;/p&gt;
+
+&lt;p&gt;At the same time, consumers wish to be able to both edit and share their experiences in the form of photos and videos with the world, and this should done as efficiently and quickly as possible.&lt;/p&gt;
+
+&lt;p&gt;Vidhance® offers stabilized video in professional quality in real time, and can also provide the user with automated suggestions on how to enhance the recorded material.&lt;/p&gt;
+
+&lt;p&gt;This is of use not just in live streams from various events, but also for example in marketing at auction sites and e-commerce companies, or for sharing video material on social media.&lt;/p&gt;
+
+&lt;p&gt;Read even more about Vidhance Mobile at &lt;a href=&#34;http://vidhancemobile.com&#34;&gt;vidhancemobile.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compression</title>
+      <link>http://vidhance.com/solutions/compression/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/solutions/compression/</guid>
+      <description>&lt;p&gt;High-quality video files still consume a relatively large amount of storage space. With stabilized and enhanced video, the small unneccessary changes from frame to frame that otherwise occur in recorded video are minimized.&lt;/p&gt;
+
+&lt;p&gt;This allows video compression algorithms to more easily minimize the file size and bandwidth required to store or transfer video files.&lt;/p&gt;
+
+&lt;p&gt;In turn this improves communication with, and storage of, video in small devices with limited storage space - such as smartphones. At the same time, video quality is dramatically improved in live scenarios such as video conferencing tools, and all private video recordings.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Air Traffic Management</title>
+      <link>http://vidhance.com/solutions/airtrafficcontrol/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/solutions/airtrafficcontrol/</guid>
+      <description>&lt;p&gt;Today, civilian air traffic is monitored by air traffic controllers performing visual observations from towers. However, air traffic control is becoming more and more reliant on video feeds. Airports see more and more cameras being installed not only for traffic control, but also for security and perimeter protection purposes.&lt;/p&gt;
+
+&lt;p&gt;New technology and applications thereof are making it possible to concentrate ATC to a centralized and possibly remote location. Airplanes are then monitored via computer screens. Unfortunately, weather and video visibility are not always favorable.&lt;/p&gt;
+
+&lt;p&gt;Vidhance® improves the video feed received at the remote traffic control by addressing weather effects such as fog, mist, uneven illumination etc. It also provides other video analytic functions, such as object tracking.&lt;/p&gt;
+
+&lt;p&gt;All of this gives flight directors full access to sensors, illumination, aerial data and other flight direction tools just as if they were on location in the local flight tower.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aerial Surveillance and UAS</title>
+      <link>http://vidhance.com/solutions/aerialsurveillance/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/solutions/aerialsurveillance/</guid>
+      <description>&lt;p&gt;Video from unmanned aerial systems can often be affected by disturbances such as uncontrollable movements, vibration, weather conditions, and more. Despite this, video streams of high quality are needed, where stabilization can be play a major part.&lt;/p&gt;
+
+&lt;p&gt;The Vidhance® technology addresses these kinds of issues and provides an improved, real-time video stream to the viewer inside a ground control station or at a remote video terminal.&lt;/p&gt;
+
+&lt;p&gt;This is something we have had experience with ever since 2009. Our products have since the beginning been developed in connection with customers in several different demanding industries.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://vidhance.com/start/start/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://vidhance.com/start/start/</guid>
+      <description>&lt;p&gt;Vidhance provides software solutions for real-time video enhancement and analysis, supporting human perception of time-critical events.&lt;/p&gt;
+
+&lt;p&gt;Our products use the efficient Vidhance live video enhancement technology, with capabilities such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rotational and planar video stabilization&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Scene adaptive contrast optimization&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Real-time image mosaicking&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Object tracking&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Colorization&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

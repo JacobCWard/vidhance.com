@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="generator" content="Hugo 0.14" />
+<title> Transferring data between CPU and GPU &middot; Vidhance </title>
+<link rel="canonical" href="http://vidhance.com/technology/cpu-gpu/">
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/menu.css">
+<link rel="stylesheet" href="/css/animation.css">
+<link rel="stylesheet" href="/css/footer.css">
+
+</head>
+<body>
+	<header class="no-animation">
+	<a href="/"><img class="no-animation" src="/img/logotype.png"></a>
+	<a id="nav-open-btn" class="nav-btn" href="#">Navigation</a>
+</header>
+
+	<nav class="no-animation">
+	
+	<ul>
+	
+		<li >
+			<a href="/">Start</a>
+			
+		</li>
+	
+		<li >
+			<a href="/newspost/">News</a>
+			
+		</li>
+	
+		<li >
+			<a href="/career/">Career</a>
+			<ul>
+
+	<li>
+		<a href="/career/technical-marketing/">Teknisk marknadsförare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/thesis-graph-scheduling/">Examensarbete inom schedulering med OpenGL</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/thesis-video-sw/">Examensarbete: algoritmer</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/senior-engineer/">Senior utvecklare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/juniorEngineer/">Junior utvecklare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/research-engineer/">Forskningsingenjör</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/apply/">Apply</a>
+		
+	</li>
+
+</ul>
+
+		</li>
+	
+		<li >
+			<a href="/solutions/">Solutions</a>
+			<ul>
+
+	<li>
+		<a href="/solutions/phone/">Portable Consumer Devices</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/apps/">Apps and Social Media</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/compression/">Compression</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/airtrafficcontrol/">Air Traffic Management</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/aerialsurveillance/">Aerial Surveillance and UAS</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/underwater/">Underwater</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/robots/">Ground Vehicles, UGVs, and Robots</a>
+		
+	</li>
+
+</ul>
+
+		</li>
+	
+		<li class="active">
+			<a href="/technology/">Technology</a>
+			<ul>
+
+	<li>
+		<a href="/technology/cpu-gpu/">CPU-GPU Data Transfer</a>
+		
+	</li>
+
+	<li>
+		<a href="/technology/six-degrees/">Six Degrees of Freedom</a>
+		
+	</li>
+
+	<li>
+		<a href="/technology/compression/">Video Compression</a>
+		
+	</li>
+
+</ul>
+
+		</li>
+	
+		<li >
+			<a href="/about/about">About</a>
+			<ul>
+
+	<li>
+		<a href="/about/contact/">Contact</a>
+		
+	</li>
+
+</ul>
+
+		</li>
+	
+	</ul>
+	<a id="nav-close-btn" class="close-btn" href="#">Return to Content</a>
+</nav>
+
+	<main class="no-animation">
+		<section>
+			<article class="">
+				<header><h1>Transferring data between CPU and GPU</h1></header>
+				
+					<figure style="float:right;margin:1em;max-width:50%;">
+						<img src="/technology/cpu-gpu/circuitboard.jpg">
+					</figure>
+				
+				<main><p>In all real-time video analysis, especially in Vidhance, all operations are time critical. Video frames arrive at a steady rate and need to be processed in real time before the next frame arrives. Every millisecond counts.</p>
+
+<p>Complex real-time video enhancement algorithms require work to be done on both the CPU (Central Processing Unit) and the GPU (Graphics Processing Unit) to achieve the highest performance. This is due to the fact that these algorithms depend on both sequential and parallel operations. A CPU handles the former better than a GPU, and vice versa. As these have separate memory, data must be transferred back and forth between them.</p>
+
+<p>Transfer time involves two concepts: latency and throughput. The throughput is the the rate at which the data is transferred during the actual data transfer. Latency is the time it takes for the whole transfer to occur, including time for initialization and waiting. Low latency is important when working with real-time analysis: Although the data throughput may be high, there can be a high latency which increases the overall transfer time.</p>
+
+<p>Vidhance often has to run on resource constrained devices such as smartphones or rugged computers. Therefore it has to be optimized for minimum resource consumption. Most of the computing time is preferrably spent analyzing and enhancing the video rather than shuffling memory between different processing units. If one is not cautious, a large portion of the time will be spent preparing the video stream and transferring it between CPU memory and GPU memory, instead of doing any actual work. A shorter transfer time means there is more time available to process the image and provide good results.</p>
+
+<p>When image data arrives into the system it has to be decoded into a useful pixel format. Afterwards, it is handled by the CPU, which analyzes the data and applies the first part of the image processing. When the CPU analysis is complete the image is sent to the GPU for further processing. The GPU applies various video enhancing techniques and then outputs the enhanced image to the screen. In some use cases the enhanced video stream needs to be streamed to other systems or saved to disk. In those cases data needs to be transferred back to the CPU, resulting in another resource-expensive transfer between CPU and GPU.</p>
+
+<p>The time required to transfer image data is not completely linear to the data size, but heavily depends on both data size and platform, so extra care must be taken in order to find a global optimum. Many different options for data transfer exist, some generic and some platform-specific. OpenGL API functions, the use of a <em>pixel buffer object</em> (PBO), and OpenCL all fall in the first category. Intel, AMD, and NVIDIA all have platform-specific alternatives, such as the <em>INTEL_map_texture</em> OpenGL extension, the <em>AMD_pinned_memory</em> OpenGL extension, or NVIDIA&rsquo;s <em>GPU Direct</em> and <em>Unified Virtual Addressing</em>. Naturally, Vidhance must make the most of what&rsquo;s available on each device.</p>
+
+<p>By implementing, calibrating, and using a decision tree, only a subset of the above methods needs to be tested. This reduces the time it takes for the data transfer controller to determine the fastest method. The controller could actually do this on the fly by transferring each frame with a new method and comparing the result against the best method so far. After a few frames the best method for that device will have been found. When using the decision algorithms to determine the fastest method, the transfer times can be drastically reduced. Most importantly, this enables work to be performed on the GPU without spending Vidhance&rsquo;s entire time budget.</p>
+
+<p>Most of the information here comes from the Master&rsquo;s thesis &ldquo;Transfer Time Reduction of Data Transfers between CPU and GPU&rdquo; performed for us in collaboration with Uppsala university. Read it in full <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-205272">here</a>. The problem of data transfer time is one we continually confront as we strive to improve Vidhance even more.</p>
+</main>
+			</article>
+		</section>
+	</main>
+	<footer>
+	<section>
+	<main>
+		<section>
+			<h3>Navigation</h3>
+			<ul>
+
+	<li>
+		<a href="/">Start</a>
+		
+	</li>
+
+	<li>
+		<a href="/newspost/">News</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/">Career</a>
+		<ul>
+
+	<li>
+		<a href="/career/technical-marketing/">Teknisk marknadsförare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/thesis-graph-scheduling/">Examensarbete inom schedulering med OpenGL</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/thesis-video-sw/">Examensarbete: algoritmer</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/senior-engineer/">Senior utvecklare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/juniorEngineer/">Junior utvecklare</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/research-engineer/">Forskningsingenjör</a>
+		
+	</li>
+
+	<li>
+		<a href="/career/apply/">Apply</a>
+		
+	</li>
+
+</ul>
+
+	</li>
+
+	<li>
+		<a href="/solutions/">Solutions</a>
+		<ul>
+
+	<li>
+		<a href="/solutions/phone/">Portable Consumer Devices</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/apps/">Apps and Social Media</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/compression/">Compression</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/airtrafficcontrol/">Air Traffic Management</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/aerialsurveillance/">Aerial Surveillance and UAS</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/underwater/">Underwater</a>
+		
+	</li>
+
+	<li>
+		<a href="/solutions/robots/">Ground Vehicles, UGVs, and Robots</a>
+		
+	</li>
+
+</ul>
+
+	</li>
+
+	<li>
+		<a href="/technology/">Technology</a>
+		<ul>
+
+	<li>
+		<a href="/technology/cpu-gpu/">CPU-GPU Data Transfer</a>
+		
+	</li>
+
+	<li>
+		<a href="/technology/six-degrees/">Six Degrees of Freedom</a>
+		
+	</li>
+
+	<li>
+		<a href="/technology/compression/">Video Compression</a>
+		
+	</li>
+
+</ul>
+
+	</li>
+
+	<li>
+		<a href="/about/about">About</a>
+		<ul>
+
+	<li>
+		<a href="/about/contact/">Contact</a>
+		
+	</li>
+
+</ul>
+
+	</li>
+
+</ul>
+
+		</section>
+		<section>
+			<h3><a href="/newspost/">News</a></h3>
+			
+				<h5><a href="/newspost/20150625-vidhance-could-soon-replace-live-video-producers/">&#34;Vidhance Could Soon Replace Live Video Producers&#34; - TechCrunch Covers New Roadmap</a></h5>
+			
+				<h5><a href="/newspost/20150623-imint-showcase-new-vidhance-mobile-capability/">Imint Showcase New Vidhance Mobile Capability - Live Autozoom Enables Consumers to Capture Powerful Videos</a></h5>
+			
+				<h5><a href="/newspost/20150721-ceo-interviewed-by-breakit/">Imint&#39;s CEO Interviewed by Breakit (in Swedish)</a></h5>
+			
+				<h5><a href="/newspost/20150326-we-welcome-bettina-david-and-ziquan/">Imint Keeps Growing - We Welcome Bettina, David and Ziquan</a></h5>
+			
+				<h5><a href="/newspost/20150219-imint-a-company-to-watch/">Imint Listed as &#34;Company to Watch&#34; by Leading Business Journal</a></h5>
+			
+		</section>
+		<section>
+			<h3><a href="/about/about/">Contact</a></h3>
+			<h5>Address</h5>
+			<p>S:t Larsgatan 5</p>
+			<p>753 11 Uppsala Sweden</p>
+			<h5>Phone</h5>
+			<p>+46 18 474 99 90</p>
+			<h5>Email</h5>
+			<p><a href="mailto:info@imint.se">info@imint.se</a></p>
+		</section>
+	</main>
+</section>
+
+	<p>copyright &copy; Imint Image Intelligence AB</p>
+</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/script/modernizr.js"></script>
+<script src="/script/main.js"></script>
+<script>
+	$(document).ready(function() {
+		
+
+		if($(window).width() > 831) {
+			$(window).scroll(function(e) {
+				$('body > header').removeClass('no-animation');
+				$('body > nav').removeClass('no-animation');
+				$('body > main').removeClass('no-animation');
+				$('body > header > a > img').removeClass('no-animation');
+				if($(document).scrollTop() > 0) {
+					$('body > header').addClass('scrolledDown');
+					$('body > nav').addClass('scrolledDown');
+					$('body > main').addClass('scrolledDown');
+				}
+				else {
+					$('body > header').removeClass('scrolledDown');
+					$('body > nav').removeClass('scrolledDown');
+					$('body > main').removeClass('scrolledDown');
+				}
+			});
+		}
+
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			$("video").prop("controls", true);
+		}
+	})
+</script>
+<script>
+if (document.URL.search("localhost") == -1) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69497927-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
